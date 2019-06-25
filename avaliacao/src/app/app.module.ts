@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 //Importações pessoais
 import { NavModule } from './navbar/nav.module';
 import { CarrosselModule } from './carrossel/carrossel.module';
+import { PhotoModule } from './photos/photo.module';
+
 
 @NgModule({
   declarations: [
@@ -13,7 +15,8 @@ import { CarrosselModule } from './carrossel/carrossel.module';
   imports: [
     BrowserModule,
     NavModule,
-    CarrosselModule
+    CarrosselModule,
+    PhotoModule
   ],
   providers: [],
   bootstrap: [AppComponent]

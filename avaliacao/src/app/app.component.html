@@ -14,6 +14,7 @@
   </div>
   <div class="col-sm-1 col-md-2 col-lg-2"></div>
 </div>
+<app-photo *ngFor = "let p of photo" [url]="p.url" [descricao]="p.descricao" [titulo]="p.titulo" [alt]="p.alt"></app-photo>
 <h2>Here are some links to help you start: </h2>
 <ul>
   <li>

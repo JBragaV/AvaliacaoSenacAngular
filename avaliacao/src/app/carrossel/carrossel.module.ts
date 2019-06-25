@@ -5,7 +5,7 @@ import { CarrosselComponent } from './carrossel.component';
     declarations: [
         CarrosselComponent
     ],
-    exports:[
+    exports: [
         CarrosselComponent
     ]
 })
