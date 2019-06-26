@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { NavModule } from './navbar/nav.module';
 import { CarrosselModule } from './carrossel/carrossel.module';
 import { PhotoModule } from './photos/photo.module';
+import { WordComponent } from './word/word.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WordComponent
   ],
   imports: [
     BrowserModule,
