@@ -24,7 +24,7 @@ export class WordComponent implements OnInit {
     this.Word.getWord(this.numero).subscribe(
       bd => this.wd = bd,
       erroDB => console.log(erroDB))
-    
+      
     console.log(this.wd)
   /*for(let i = 0; i < palavra.length; i++){
       this.soletrando.push(palavra[i])
