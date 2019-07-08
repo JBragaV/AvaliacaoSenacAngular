@@ -11,7 +11,7 @@ import { PhotoModule } from './photos/photo.module';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 import { AppRoutingModule } from './app.routing.module';
 import { HomeModule } from './home/home.module';
-import { WordModule } from './word/word.module';
+import { ForcaModule } from './forca/forca.module';
 
 
 @NgModule({
@@ -25,7 +25,7 @@ import { WordModule } from './word/word.module';
     PhotoModule,
     AppRoutingModule,
     HomeModule,
-    WordModule,
+    ForcaModule,
     HttpClientModule
   ],
   providers: [],

@@ -1,0 +1,21 @@
+  palavras = ['jocimar', 'flamengo', 'rafael', 'joão', 'louco', 'ti', 'ola', 'paralelepipedo'];
+    
+    wd:word[];
+  
+  soletrando = [];
+  
+  
+  constructor(private Word:WordService){
+
+    console.log(this.numero)
+    this.Word.getWord(1).subscribe(
+      bd => this.wd = bd,
+      erroDB => console.log(erroDB))
+      
+    console.log(this.wd)
+  /*for(let i = 0; i < palavra.length; i++){
+      this.soletrando.push(palavra[i])
+      console.log(this.soletrando)
+     }*/
+    }
+    *ngFor="let l of soletrando" size ="1" width="1" maxlength="1" type="text"(blur)="valida($event.target.value, l)"

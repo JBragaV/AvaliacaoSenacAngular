@@ -1,32 +1,30 @@
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img width="300" class="d-block w-100" src="https://i.stack.imgur.com/9RQY4.jpg" alt="Primeiro Slide">
+      <div class="carousel-caption d-none d-md-block">
+          <h5>{{ titulo }}</h5>
+          <p>{{ descricao }}</p>
+        </div>
+    </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img width="300" class="d-block w-100" src="https://abrilsuperinteressante.files.wordpress.com/2018/07/56f2e9030e21630a3e188818tupa_jaci_guaraci1.jpeg?quality=70&strip=info" alt="Primeiro Slide">
+        <img width="300" class="d-block w-100" src="https://i2.wp.com/thepointsguy.com/wp-content/uploads/2019/07/Norwegian-787-9.jpg?width=1920&height=1280&attachment_id=743815&ssl=1" alt="Primeiro Slide">
         <div class="carousel-caption d-none d-md-block">
-            <h5>Tupã, Jaci, Guaraci</h5>
-            <p>“O Espírito do Trovão”, deusa Lua e guardiã da noite, o deus Sol</p>
+            <h5>{{ titulo }}</h5>
+            <p>{{ descricao }}</p>
           </div>
       </div>
-      <div class="carousel-item">
-        <img width="300" class="d-block w-100" src="https://abrilsuperinteressante.files.wordpress.com/2018/07/56f2e9030e21630a3e18880eceuci_anhanga_sume1.jpeg?quality=70&strip=info" alt="Segundo Slide">
-        <div class="carousel-caption d-none d-md-block">
-            <h5>...</h5>
-            <p>...</p>
-          </div>
-      </div>
-      <div class="carousel-item">
-        <img width="300" class="d-block w-100" src="https://abrilsuperinteressante.files.wordpress.com/2018/07/56f2e9030e21630a3e18880cakuanduba_yorixiriamori1.jpeg?quality=70&strip=info" alt="Terceiro Slide">
-        <div class="carousel-caption d-none d-md-block">
-            <h5>...</h5>
-            <p>...</p>
-          </div>
-      </div>
-    </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img width="300" class="d-block w-100" src="https://i.stack.imgur.com/9RQY4.jpg" alt="Primeiro Slide">
+          <div class="carousel-caption d-none d-md-block">
+              <h5>{{ titulo }}</h5>
+              <p>{{ descricao }}</p>
+            </div>
+        </div>
+
+  <!--<app-photo *ngFor="let f of Photos" [titulo]="f.titulo" [descricao]="f.descricao" [url]="f.url"></app-photo>-->
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Anterior</span>

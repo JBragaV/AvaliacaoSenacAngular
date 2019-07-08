@@ -13,6 +13,6 @@ export class WordService{
     constructor(private http:HttpClient){}
 
     getWord(numero:number){
-        return this.http.get<word[]>(`${url_api}/word/${numero}`, httpOptions)
+        return this.http.get<word[]>(`${url_api}/word?id=${numero}`, httpOptions)
     }    
 }

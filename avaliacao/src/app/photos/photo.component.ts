@@ -9,5 +9,4 @@ export class PhotoComponent{
     @Input() url;
     @Input() titulo;
     @Input() descricao;
-    @Input() alt;
 }
