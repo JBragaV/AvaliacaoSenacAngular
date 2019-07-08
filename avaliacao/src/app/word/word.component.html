@@ -1,1 +1,2 @@
-<p>{{ palavra }}</p>
+<h2>Teste de input</h2>
+<input *ngFor="let l of soletrando" size ="1" width="1" maxlength="1" type="text"(blur)="valida($event.target.value, l)">
