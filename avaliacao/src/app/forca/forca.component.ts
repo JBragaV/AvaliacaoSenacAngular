@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { WordService } from '../word/word.service';
 import { word } from '../word/word.model';
-import { WebDriver } from 'protractor';
 
 @Component({
     selector:"app-forca",
@@ -28,7 +27,6 @@ export class ForcaComponent implements OnInit {
         });
         this.soletrando=this.wd[0].palavra.split('') 
         console.log(this.soletrando)
-        //console.log(this.soletrando.length);
         console.log(this.valor)
     }
 
