@@ -11,7 +11,7 @@ export class ForcaComponent implements OnInit {
     valor:string
     wd:word[];
     soletrando:string[];
-    pontuação = 10;
+    pontuacao = 10;
     jogador = [];
     
     constructor(private word:WordService){}
@@ -37,13 +37,13 @@ export class ForcaComponent implements OnInit {
           alert("Acertouuuuu");
           this.jogador.push(l);
           if(this.jogador.length == this.soletrando.length){
-              alert(`Acertou!!! A palavra era ${this.wd[0].palavra} e sua pontuação final foi de ${this.pontuação} pontos`)
+              alert(`Acertou!!! A palavra era ${this.wd[0].palavra} e sua pontuação final foi de ${this.pontuacao} pontos`)
               window.location.reload()
           }
           
         }else{
-          this.pontuação -=1
-          alert("Errouuuuu. Sua pontuação "+this.pontuação);
+          this.pontuacao -=1
+          alert("Errouuuuu. Sua pontuação "+this.pontuacao);
         }
     }
 }
